@@ -1,786 +1,256 @@
-<html>
-	<head>
-		<meta content="text/html; charset=UTF-8" http-equiv="content-type">
-		<style type="text/css">
-			@import url('https://themes.googleusercontent.com/fonts/css?kit=DwAJMKJfUbhq92RNKf-2vQ');ol {
-				margin: 0;
-				padding: 0
-			}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Title -->
+        <title>Yumaste Simple Kitchen - Basic Chef Training</title>
 
-			table td,table th {
-				padding: 0
-			}
+    <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-			.c25 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: middle;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				background-color: #76a5af;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 13.5pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+        <!-- Cache Control -->
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
 
-			.c17 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: top;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				background-color: #76a5af;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 33pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@publisher_handle">
+        <meta name="twitter:title" content="Page Title">
+        <meta name="twitter:description" content="Page description less than 200 characters">
+        <meta name="twitter:creator" content="@author_handle">
+        <!-- Twitter Summary card images must be at least 120x120px -->
+        <meta name="twitter:image" content="http://www.example.com/image.jpg">
 
-			.c3 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: top;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				background-color: #76a5af;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 27pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Title Here" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.example.com/" />
+        <meta property="og:image" content="http://example.com/image.jpg" />
+        <meta property="og:description" content="Yumaste Simple Kitchen - Basic Chef Training" />
+        <meta property="og:site_name" content="Yumaste Simple Kitchen" />
+        <meta property="fb:admins" content="Facebook numeric ID" />
 
-			.c7 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: middle;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				background-color: #76a5af;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 12pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400" rel="stylesheet">
 
-			.c6 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: middle;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				background-color: #76a5af;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 460.5pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+    <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/style.css">
 
-			.c26 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: middle;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				background-color: #76a5af;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 375pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/deznx.js"></script>
 
-			.c50 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: top;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 400.5pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
-			.c38 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: top;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 12pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+    <!-- Google Analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			.c23 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: top;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 375pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
+      ga('create', 'UA-', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<body id="top">
 
-			.c37 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: top;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 13.5pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
 
-			.c48 {
-				border-right-style: solid;
-				padding: 5pt 5pt 5pt 5pt;
-				border-bottom-color: #000000;
-				border-top-width: 0pt;
-				border-right-width: 0pt;
-				border-left-color: #000000;
-				vertical-align: middle;
-				border-right-color: #000000;
-				border-left-width: 0pt;
-				border-top-style: solid;
-				border-left-style: solid;
-				border-bottom-width: 0pt;
-				width: 33pt;
-				border-top-color: #000000;
-				border-bottom-style: solid
-			}
 
-			.c1 {
-				color: #222222;
-				font-weight: 400;
-				text-decoration: none;
-				vertical-align: baseline;
-				font-size: 12pt;
-				font-family: "Arial";
-				font-style: normal
-			}
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="hero-image"></div>
+  <div class="container centered">
+    <div class="twelve columns">
+      <h2>YUMASTE SIMPLE KITCHEN™</h2>
+      <h1 class="separator">Basic Chef Training</h1>
+      <h1>How to Simply "Shop, Cook, Eat, & Share" Yummy & Healthy Meals.</h1>
+    </div>
+    <div class="twelve columns">
+        <br>
+    <a href="#introduction"><button class="button-primary">CLICK TO LEARN MORE</button></a>
+  </div>
+  </div>
+</section>
 
-			.c12 {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: left;
-				height: 11pt
-			}
+<!-- INTRODUCTION -->
+<section id="introduction" class="introduction">
+    <div class="container">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="settings"></div>
+                <h1 class="center">WHAT YOU'LL LEARN:</h1>
+                <h2>You'll train under the guidance of the Head Chef in a commercial kitchen designed specifically for Yumaste Simple Kitchen standards. Classes will be an "interactive-observational" experience that begins with an exploration of simple spices, training in food prep and handling, and concludes with cooking amazing entrees inspired by local & international cuisines.</h2>
+                <h2>COURSE FEE: <strong>$216</strong></h2>
+                <a href="https://cash.me/$agentbey/216" target="_blank"><button class="button-primary">I'M READY TO PAY</button></a>
+            </div>
+    </div>
+</section>
 
-			.c0 {
-				color: #666666;
-				font-weight: 400;
-				text-decoration: none;
-				vertical-align: baseline;
-				font-size: 12pt;
-				font-family: "Arial";
-				font-style: normal
-			}
+<!-- SECTION FEATURES -->
+<section id="features" class="features">
+    <div class="row">
+        <div class="one-third column fit feature-bg-image2">
+        </div>
+    <div class="one-third column fit">
+        <h2 class="separator">EXPERIENCE THE YUM:</h2>
+            <p>INSTRUCTOR: Chef David Bey</p>
+            <p>DATE AND TIME: TBD (based on scheduling confirmations)</p>
+            <p>LOCATION: Beckett Life Center, <br>1410 N 16th Street, Philadelphia, PA 19121</p>
+    </div>
+    <div class="one-third column fit feature-bg-image3">
+    </div>
+    </div>
+</section>
 
-			.c2 {
-				color: #222222;
-				font-weight: 400;
-				text-decoration: none;
-				vertical-align: baseline;
-				font-size: 12pt;
-				font-family: "Arial";
-				font-style: italic
-			}
+<!-- SECTION GALLERY -->
+<section id="gallery" class="gallery-2">
+    <div class="container">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="route"></div>
+                <h1 class="center">Course Details:</h1>
+                <h2>Basic Chef Trainings (BCT) courses will be offered on Sundays. After purchases are complete, David or Fawaaz will contact you via email and phone to schedule your training.</h2>
+                <p>All payments are final. NO REFUNDS. <br>To reschedule, please contact David or Fawaaz at least 48 hrs before your scheduled training.</p>
+                <h2>COURSE FEE: <strong>$216</strong></h2>
+                <a href="https://cash.me/$agentbey/216" target="_blank"><button class="button-primary">I'M READY TO PAY</button></a>
+            </div>
+    </div>
+</section>
 
-			.c44 {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: center
-			}
+<!-- Benefits -->
+<div class="arrow-down" id="down_arrow_a"></div>
+<section id="talent" class="talent">
+    <div class="container">
+        <div class="row add-bottom">
+            <div class="twelve columns">
+                <h1 class="center">Why Take a Basic Chef Training Course?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column">
+                <div class="repeater">
+                    <h2 class="center">Shop</h2>
+                    <p>Increase confidence and ability with food and kitchen shopping.</p>
+                        <ul>
+                            <li>What ingredients to buy when shopping.</li>
+                            <li>Where to buy ingredients within your locale.</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="one-half column">
+                <div class="repeater">
+                    <h2 class="center">Cook</h2>
+                    <p>You will personally cook <strong>three</strong> Yummy and Healthy meals.</p>
+                        <ul>
+                            <li>Learn to prepare simple and easy gourmet meals</li>
+                            <li>Gain confidence in the kitchen</li>
+                            <li>Expand your spice knowledge</li>
+                            <li>Hands-on basic knife techniques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="one-half column">
+                <div class="repeater">
+                    <h2 class="center">Eat</h2>
+                    <p>You will personally eat <strong>nine</strong> Yummy and Healthy dishes.</p>
+                        <ul>
+                            <li>Watch and enjoy the creation of an appetizer, soup, salad.</li>
+                            <li>And a special dish prepared by the head chef</li>
+                            <li>Plus two wholesome grains</li>
+                            <li>You’ll also take-away meals to enjoy later.</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="one-half column">
+                <div class="repeater">
+                    <h2 class="center">Share</h2>
+                    <p>Generate earned income by selling meals powered by Yumaste Simple Kitchen’s trainings and tools/technology.</p>
+                        <ul>
+                            <li>Increase hyper local access to yummy, healthy, and affordable gourmet meals for end users</li>
+                            <li>You will have access to a global community of YSK Chefs who have chosen to be foodpreneurs</li>
+                            <li>Increase joy & strengthen relationships by sharing yummy and healthy meals.</li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-			.c4 {
-				padding-top: 0pt;
-				padding-bottom: 20pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
+<!-- TESTIMONIALS -->
+<section id="testimonial" class="testimonial">
+  <div class="testimonial-image"></div>
+  <div class="container centered">
+    <div class="twelve columns">
+      <h1 class="separator">What our Chefs are saying?</h1>
+      <div id="rotate">
+      	<div class="section-center" style="display: none;">
+      		<blockquote>
+      			<h2>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
+      			<p class="quote-author">Author Name – Company Name</p>
+      		</blockquote>
+      	</div>
+      	<div class="section-center" style="display: none;">
+      		<blockquote>
+      			<h2>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</h2>
+      			<p class="quote-author">Author Name – Company Name</p>
+      		</blockquote>
+      	</div>
+      	<div class="section-center" style="display: none;">
+      		<blockquote>
+      			<h2>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+      			<p class="quote-author">Author Name – Company Name</p>
+      		</blockquote>
+      	</div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
 
-			.c28 {
-				padding-top: 0pt;
-				padding-bottom: 20pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: center
-			}
+<!-- Footer Content -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="one-third column">
+                    <h3>Yumaste Simple Kitchen™</h3>
+                    <p>The word Yumaste is a combination of Yummy and the Sanskrit word Namaste which translates to “I salute the Divine in you.”</p>
+            </div>
+        <div class="one-third column center">
+            <h3>Course Location:</h3>
+                <p>
+                    Beckett Life Center<br>
+                    1410 North 16th Street<br>
+                    Philadelphia, PA 19121<br>
+                </p>
+        </div>
 
-			.c47 {
-				padding-top: 0pt;
-				padding-bottom: 30pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: center
-			}
+        <div class="one-third column center">
+                <h3>Basic Chef Training Course</h3>
+                <h3>COURSE FEE: <strong>$216<strong></h3>
+                <a href="https://cash.me/$agentbey/216" target="_blank"><button class="button-primary">I'M READY TO PAY</button></a>
+        </div>
+    </div>
+        <div class="row">
+            <div class="copyright center">
+                © 2018 Yumaste Simple Kitchen, LLC  |  Made with Design Excellence <p id="currentDate"></p>
+            </div>
+        </div>
+    </div>
+    <div class="scrollToTop"><a href="#top" role="button">╱╲</a></div>
+</footer>
 
-			.c10 {
-				padding-top: 0pt;
-				padding-bottom: 10pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: center
-			}
-
-			.c20 {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			.c36 {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				line-height: 1.5;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			.c41 {
-				padding-top: 0pt;
-				padding-bottom: 10pt;
-				line-height: 1.15;
-				orphans: 2;
-				widows: 2;
-				text-align: center
-			}
-
-			.c21 {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				line-height: 1.0;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			.c34 {
-				padding-top: 0pt;
-				padding-bottom: 20pt;
-				line-height: 1.5;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			.c9 {
-				padding-top: 0pt;
-				padding-bottom: 0pt;
-				line-height: 1.0;
-				text-align: left;
-				height: 11pt
-			}
-
-			.c43 {
-				font-size: 12pt;
-				font-family: "Arial";
-				color: #1155cc;
-				font-weight: 400;
-				text-decoration: underline
-			}
-
-			.c30 {
-				color: #484848;
-				font-weight: 400;
-				font-size: 12pt;
-				font-family: "Arial"
-			}
-
-			.c16 {
-				font-size: 12pt;
-				font-family: "Arial";
-				color: #666666;
-				font-weight: 700
-			}
-
-			.c27 {
-				color: #666666;
-				font-weight: 700;
-				font-size: 14pt;
-				font-family: "Arial"
-			}
-
-			.c14 {
-				font-size: 16pt;
-				font-family: "Arial";
-				color: #76a5af;
-				font-weight: 700
-			}
-
-			.c33 {
-				font-size: 12pt;
-				font-family: "Arial";
-				color: #222222;
-				font-weight: 400
-			}
-
-			.c42 {
-				color: #222222;
-				font-weight: 700;
-				font-size: 9pt;
-				font-family: "Arial"
-			}
-
-			.c5 {
-				font-size: 12pt;
-				font-family: "Arial";
-				color: #666666;
-				font-weight: 400
-			}
-
-			.c15 {
-				color: #222222;
-				font-weight: 400;
-				font-size: 10pt;
-				font-family: "Arial"
-			}
-
-			.c32 {
-				font-size: 9pt;
-				font-family: "Arial";
-				color: #222222;
-				font-weight: 400
-			}
-
-			.c19 {
-				color: #222222;
-				font-weight: 700;
-				font-size: 14pt;
-				font-family: "Arial"
-			}
-
-			.c40 {
-				font-size: 14pt;
-				font-family: "Arial";
-				color: #000000;
-				font-weight: 700
-			}
-
-			.c22 {
-				margin-left: auto;
-				border-spacing: 0;
-				border-collapse: collapse;
-				margin-right: auto
-			}
-
-			.c24 {
-				color: #ffffff;
-				font-weight: 700;
-				font-size: 20pt;
-				font-family: "Arial"
-			}
-
-			.c8 {
-				font-size: 12pt;
-				font-family: "Arial";
-				color: #222222;
-				font-weight: 700
-			}
-
-			.c39 {
-				background-color: #ffffff;
-				max-width: 960;
-				padding: 72pt 72pt 72pt 72pt;
-                margin: 0 auto;
-			}
-
-			.c11 {
-				text-decoration: none;
-				vertical-align: baseline;
-				font-style: normal
-			}
-
-			.c51 {
-				text-decoration: none;
-				vertical-align: baseline
-			}
-
-			.c49 {
-				color: inherit;
-				text-decoration: inherit
-			}
-
-			.c46 {
-				text-decoration: underline
-			}
-
-			.c45 {
-				font-style: italic;
-                text-align: center;
-			}
-
-			.c29 {
-				height: 11pt
-			}
-
-			.c18 {
-				height: 12pt
-			}
-
-			.c31 {
-				height: 22pt
-			}
-
-			.c13 {
-				height: 48pt
-			}
-
-			.c35 {
-				background-color: #76a5af
-			}
-
-			.title {
-				padding-top: 0pt;
-				color: #484848;
-				font-size: 14pt;
-				padding-bottom: 0pt;
-				font-family: "Raleway";
-				line-height: 1.0;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: center
-			}
-
-			.subtitle {
-				padding-top: 0pt;
-				color: #666666;
-				font-size: 15pt;
-				padding-bottom: 16pt;
-				font-family: "Arial";
-				line-height: 1.15;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			li {
-				color: #484848;
-				font-size: 11pt;
-				font-family: "Raleway"
-			}
-
-			p {
-				margin: 0;
-				color: #484848;
-				font-size: 11pt;
-				font-family: "Raleway"
-			}
-
-			h1 {
-				padding-top: 20pt;
-				color: #484848;
-				font-size: 20pt;
-				padding-bottom: 6pt;
-				font-family: "Raleway";
-				line-height: 1.15;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			h2 {
-				padding-top: 18pt;
-				color: #484848;
-				font-size: 16pt;
-				padding-bottom: 6pt;
-				font-family: "Raleway";
-				line-height: 1.15;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			h3 {
-				padding-top: 16pt;
-				color: #434343;
-				font-size: 14pt;
-				padding-bottom: 4pt;
-				font-family: "Raleway";
-				line-height: 1.15;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			h4 {
-				padding-top: 14pt;
-				color: #666666;
-				font-size: 12pt;
-				padding-bottom: 4pt;
-				font-family: "Raleway";
-				line-height: 1.15;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			h5 {
-				padding-top: 12pt;
-				color: #666666;
-				font-size: 11pt;
-				padding-bottom: 4pt;
-				font-family: "Raleway";
-				line-height: 1.15;
-				page-break-after: avoid;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-
-			h6 {
-				padding-top: 12pt;
-				color: #666666;
-				font-size: 11pt;
-				padding-bottom: 4pt;
-				font-family: "Raleway";
-				line-height: 1.15;
-				page-break-after: avoid;
-				font-style: italic;
-				orphans: 2;
-				widows: 2;
-				text-align: left
-			}
-		</style>
-	</head>
-	<body class="c39">
-		<p class="c10">
-			<span class="c40">Want to Participate with Yumaste Simple Kitchen™?</span><br/>
-			<span class="c5">Enroll in our &ldquo;Basic Chef Training &rdquo;course (below).</span>
-		</p>
-		<a id="t.eccc9ca7e8a0c827cf22a5be6c598199dc3c2304"></a>
-		<a id="t.0"></a>
-		<table class="c22">
-			<tbody>
-				<tr class="c13">
-					<td class="c6" colspan="5" rowspan="1">
-						<p class="c44">
-							<span class="c11 c24">Yumaste Simple Kitchen™</span>
-						</p>
-					</td>
-				</tr>
-				<tr class="c18">
-					<td class="c3" colspan="1" rowspan="3">
-						<p class="c9">
-							<span class="c8 c11"></span>
-						</p>
-					</td>
-					<td class="c37" colspan="1" rowspan="1">
-						<p class="c9">
-							<span class="c8 c11"></span>
-						</p>
-					</td>
-					<td class="c23" colspan="1" rowspan="1">
-						<p class="c9">
-							<span class="c11 c42"></span>
-						</p>
-					</td>
-					<td class="c38" colspan="1" rowspan="1">
-						<p class="c9">
-							<span class="c8 c11"></span>
-						</p>
-					</td>
-					<td class="c17" colspan="1" rowspan="3">
-						<p class="c9">
-							<span class="c8 c11"></span>
-						</p>
-					</td>
-				</tr>
-				<tr class="c31">
-					<td class="c37" colspan="1" rowspan="1">
-						<p class="c10 c29">
-							<span class="c1"></span>
-						</p>
-					</td>
-					<td class="c23" colspan="1" rowspan="1">
-						<p class="c47">
-							<span class="c14">
-								We are looking for our 1st customers! <br>Pay now for your "Basic Chef Training" course!
-							</span>
-							<span class="c11 c27">(see details below for price and product overview)</span>
-						</p>
-						<p class="c20">
-							<span class="c8">Product 1: "Basic Chef Training" course: $216</span>
-						</p>
-						<p class="c12">
-							<span class="c8 c11"></span>
-						</p>
-						<p class="c20">
-							<span class="c8">Pay Now</span>
-						</p>
-						<p class="c4">
-							<span class="c0">Click the button below to purchase your course.</span>
-						</p>
-						<p class="c28">
-							<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 249.50px; height: 47.30px;">
-								<a href="https://cash.me/$agentbey/216" target="_blank"><img alt="button.png" src="images/image1.png" style="width: 249.50px; height: 47.30px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" title=""></a>
-							</span>
-						</p>
-						<p class="c12">
-							<span class="c8 c11"></span>
-						</p>
-						<p class="c20">
-							<span class="c8 c11">Product Overview: "Basic Chef Training" course</span>
-						</p>
-						<p class="c4">
-							<span class="c0">Basic Chef Training (B.C.T.) is a 5-hour training on how to simply &quot;Shop, Cook, Eat, &amp; Share &quot;yummy &amp; healthy meals.</span>
-						</p>
-						<p class="c20">
-							<span class="c8 c11">WHAT YOU'LL LEARN:</span>
-						</p>
-						<p class="c4">
-							<span class="c0">You &rsquo;ll train under the guidance of the Head Chef in a commercial kitchen designed specifically for YSK standards. Classes will be an "interactive-observational" experience that begins with an exploration of simple spices, training in food prep and handling, and concludes with cooking amazing entrees inspired by local &amp; international cuisines.</span>
-						</p>
-						<p class="c20">
-							<span class="c8 c11">EXPERIENCE THE YUM:</span>
-						</p>
-						<p class="c36">
-							<span class="c0">&bull; Spices</span>
-						</p>
-						<p class="c36">
-							<span class="c5">&bull; Prep and Food Handling</span>
-							<span class="c5 c51 c45">(including knife skills)</span>
-						</p>
-						<p class="c36">
-							<span class="c0">&bull; Soups / Sauces</span>
-						</p>
-						<p class="c34">
-							<span class="c0">&bull; Entrees</span>
-						</p>
-						<p class="c20">
-							<span class="c8 c11">INSTRUCTOR:</span>
-						</p>
-						<p class="c4">
-							<span class="c5">Chef David Bey</span>
-						</p>
-						<p class="c20">
-							<span class="c8 c11">DATE AND TIME:</span>
-						</p>
-						<p class="c4">
-							<span class="c5">TBD </span>
-							<span class="c5 c45">(varies based on scheduling confirmations)</span>
-						</p>
-						<p class="c20">
-							<span class="c8 c11">LOCATION: </span>
-						</p>
-						<p class="c20">
-							<span class="c1">Beckett Life Center, 1410 N 16th Street, Philadelphia, PA 19121 </span>
-						</p>
-						<p class="c10">
-							<span class="c33">(</span>
-							<span class="c43">
-								<a class="c49" href="http://beckettlifecenter.org">http://beckettlifecenter.org</a>
-							</span>
-							<span class="c1">)</span>
-						</p>
-						<p class="c10">
-							<span class="c11 c15">(Please Note: Basic Chef Trainings (BCT) courses will be offered on Sundays for the remainder of Winter and Spring 2018. After purchases are complete, David or Fawaaz will contact you via email and phone to schedule your training. All payments are final. NO REFUNDS. To reschedule, please contact David or Fawaaz at least 48 hrs before your scheduled training.)</span>
-						</p>
-						<p class="c41">
-							<span class="c32">&copy;2018 Yumaste Simple Kitchen™. All Rights Reserved.</span>
-						</p>
-					</td>
-					<td class="c38" colspan="1" rowspan="1">
-						<p class="c10 c29">
-							<span class="c1"></span>
-						</p>
-					</td>
-				</tr>
-				<tr class="c31">
-					<td class="c35 c50" colspan="3" rowspan="1">
-						<p class="c9">
-							<span class="c8 c11"></span>
-						</p>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</body>
+</body>
 </html>
