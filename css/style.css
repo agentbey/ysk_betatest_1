@@ -144,7 +144,6 @@ h1.separator {
   position: relative;
   text-align: center;
 }
-
 .introduction h2 {color: #9f652d;}
 
 /* FEATURES */
@@ -376,7 +375,7 @@ ul.social-buttons li {
 .scrollToTop a {
 	color: #fff;
 	text-decoration: none;
-	font-size: .1em;
+	font-size: 14px;
 }
 
 /* MEDIA QUIERIES */
@@ -395,11 +394,9 @@ ul.social-buttons li {
 	.primary-nav {
 		display: none;
 	}
-
 	.secondary-nav {
 		display: block;
 	}
-
 	.secondary-nav .navbar {
 		display: block;
 		z-index: 9999;
@@ -407,7 +404,6 @@ ul.social-buttons li {
 		background: rgba(17, 17, 17, 0.9);
 		width: 100%;
 	}
-
 	.six.columns img {
 		margin-bottom: 40px;
 	}
@@ -419,7 +415,6 @@ ul.social-buttons li {
 		font-size: 2em;
 		letter-spacing: .2em;
 	}
-
 	.gallery-1, .gallery-2 {
 		padding: 80px 0 40px;
 	}
