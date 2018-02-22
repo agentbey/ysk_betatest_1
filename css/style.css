@@ -376,6 +376,7 @@ ul.social-buttons li {
 	color: #fff;
 	text-decoration: none;
 	font-size: 14px;
+	letter-spacing: -.05em;
 }
 
 /* MEDIA QUIERIES */
